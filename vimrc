@@ -126,12 +126,13 @@ let g:pymode_folding = 0
 " E.g. "E501,W002", "E2,W" (Skip all Warnings and Errors startswith E2) and etc
 let g:pymode_lint_ignore = "E501,C0301"
 
-nmap <F8> :TagbarToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
+nnoremap <F5> :GundoToggle<CR>
 " Move trow linebreaks
-vmap <A-Down> gj
-vmap <A-Up> gk
-nmap <A-Down> gj
-nmap <A-Up> gk
+vnoremap <A-Down> gj
+vnoremap <A-Up> gk
+nnoremap <A-Down> gj
+nnoremap <A-Up> gk
 
 if has("gui_running")
     " C-Space seems to work under gVim on both Linux and win32
