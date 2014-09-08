@@ -13,6 +13,7 @@ set showcmd	    	" display incomplete commands
 set incsearch		" do incremental searching
 set hlsearch
 
+set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,latin1
 " The numbered lines
 set number
@@ -134,6 +135,12 @@ vnoremap <A-Up> gk
 nnoremap <A-Down> gj
 nnoremap <A-Up> gk
 
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
 if has("gui_running")
     " C-Space seems to work under gVim on both Linux and win32
     inoremap <C-Space> <C-n>
@@ -145,3 +152,11 @@ else " no gui
   endif
 endif
 
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-s-space>"
+let g:UltiSnipsJumpForwardTrigger="<c-s-space>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
