@@ -22,9 +22,6 @@
 [submodule "bundle/autoswap"]
 	path = bundle/autoswap
 	url = /home/tant/git/vim-autoswap/
-[submodule "bundle/lambdify"]
-	path = bundle/lambdify
-	url = https://github.com/calebsmith/vim-lambdify.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
