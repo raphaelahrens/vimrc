@@ -12,6 +12,7 @@ set ruler	    	" show the cursor position all the time
 set showcmd	    	" display incomplete commands
 set incsearch		" do incremental searching
 set hlsearch
+set hidden
 
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,latin1
@@ -134,6 +135,9 @@ vnoremap <A-Down> gj
 vnoremap <A-Up> gk
 nnoremap <A-Down> gj
 nnoremap <A-Up> gk
+
+nnoremap <silent> <C-Left> :bn<CR>
+nnoremap <silent> <C-Right> :bp<CR>
 
 nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
