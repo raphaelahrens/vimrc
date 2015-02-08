@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/usr/home/tant/git/menu_cleaner/ObMCleaner.egg-info'
-let g:netrw_dirhist_2='/usr/home/tant/.oh-my-zsh/plugins/tant'
-let g:netrw_dirhist_3='/usr/home/tant/.config/terminology/themes'
-let g:netrw_dirhist_4='/usr/home/tant/lab/terra/terra'
-let g:netrw_dirhist_5='/usr/home/tant/.themes/Tant/xfce-notify-4.0'
