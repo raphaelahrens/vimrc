@@ -8,16 +8,29 @@ set backspace=indent,eol,start
 
 set nobackup		" do not keep a backup file, use versions instead
 set history=250		" keep 250 lines of command line history
+set hidden          " Abandon buffers even if they have changes
+set number          " The numbered lines
+set laststatus=2    " Always show the status line
 set ruler	    	" show the cursor position all the time
 set showcmd	    	" display incomplete commands
+set wildmenu        " show matched words of tab completion and highlight selected
+set scrolloff=1 
+set display+=lastline
+
+set formatoptions+=j " Delete comment character when joining commented lines
+
+set mouse=a         " In many terminal emulators the mouse works just fine, thus enable it.
+
 set incsearch		" do incremental searching
 set hlsearch
-set hidden
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+    nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
+
 
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,latin1
-" The numbered lines
-set number
 " Show line breaks with a beginning …
 set showbreak=…
 " Set tab to 4 spaces
@@ -36,11 +49,7 @@ set guicursor&
 " END
 """""
 
-" Don't use Ex mode, use Q for formatting
-map Q gq
 
-" In many terminal emulators the mouse works just fine, thus enable it.
-set mouse=a
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -128,8 +137,12 @@ let g:pymode_folding = 0
 " E.g. "E501,W002", "E2,W" (Skip all Warnings and Errors startswith E2) and etc
 let g:pymode_lint_ignore = "E501,C0301"
 
-nnoremap <F8> :TagbarToggle<CR>
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+
 nnoremap <F5> :GundoToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 " Move trow linebreaks
 vnoremap <A-Down> gj
 vnoremap <A-Up> gk
