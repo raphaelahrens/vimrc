@@ -141,8 +141,9 @@ let g:pymode_lint_ignore = "E501,C0301"
 map Q gq
 
 
+nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
-nnoremap <F8> :TagbarToggle<CR>
+nnoremap <F7> :TagbarToggle<CR>
 " Move trow linebreaks
 vnoremap <A-Down> gj
 vnoremap <A-Up> gk
