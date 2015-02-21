@@ -1,3 +1,5 @@
+set encoding=utf-8
+scriptencoding utf-8
 colorscheme tantmustang
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -29,7 +31,6 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 
-set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,latin1
 " Show line breaks with a beginning …
 set showbreak=…
