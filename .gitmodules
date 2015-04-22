@@ -43,3 +43,6 @@
 [submodule "bundle/LearnVim"]
 	path = bundle/LearnVim
 	url = https://github.com/dahu/LearnVim.git
+[submodule "bundle/csharp"]
+	path = bundle/csharp
+	url = https://github.com/vim-scripts/csharp.vim
