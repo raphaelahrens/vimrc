@@ -159,8 +159,8 @@ vnoremap <A-Up> gk
 nnoremap <A-Down> gj
 nnoremap <A-Up> gk
 
-nnoremap <silent> <C-Left> :bn<CR>
-nnoremap <silent> <C-Right> :bp<CR>
+nnoremap <silent> <C-Left> :previous<CR>
+nnoremap <silent> <C-Right> :next<CR>
 
 nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
