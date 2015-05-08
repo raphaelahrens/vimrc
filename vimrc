@@ -153,6 +153,9 @@ map Q gq
 
 
 nnoremap <Leader>c :Gstatus<CR>
+nnoremap <Leader>sw :SessionSave<CR>
+nnoremap <Leader>sl :SessionList<CR>
+
 nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F7> :TagbarToggle<CR>
