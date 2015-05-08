@@ -146,6 +146,8 @@ let g:pymode_folding = 0
 " E.g. "E501,W002", "E2,W" (Skip all Warnings and Errors startswith E2) and etc
 let g:pymode_lint_ignore = "E501,C0301"
 
+let mapleader = "ä"
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
