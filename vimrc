@@ -150,6 +150,7 @@ let g:pymode_lint_ignore = "E501,C0301"
 map Q gq
 
 
+nnoremap <Leader>c :Gstatus<CR>
 nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F7> :TagbarToggle<CR>
