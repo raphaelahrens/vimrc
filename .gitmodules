@@ -52,3 +52,6 @@
 [submodule "bundle/javascript-libraries-syntax"]
 	path = bundle/javascript-libraries-syntax
 	url = https://github.com/othree/javascript-libraries-syntax.vim.git
+[submodule "bundle/jsdoc"]
+	path = bundle/jsdoc
+	url = https://github.com/heavenshell/vim-jsdoc.git
