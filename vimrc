@@ -163,6 +163,7 @@ nnoremap Ü "0P
 vnoremap ü "0p
 vnoremap Ü "0P
 
+nnoremap ° ^
 
 nnoremap <Leader>c :Gstatus<CR>
 nnoremap <Leader>sw :SessionSave<CR>
