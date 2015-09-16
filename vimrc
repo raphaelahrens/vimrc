@@ -168,6 +168,7 @@ nnoremap ° ^
 nnoremap <Leader>c :Gstatus<CR>
 nnoremap <Leader>sw :SessionSave<CR>
 nnoremap <Leader>sl :SessionList<CR>
+nnoremap <Leader>l :!leo <C-R><C-W><CR>
 
 nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
