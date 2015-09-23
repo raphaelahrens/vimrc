@@ -8,6 +8,9 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" Windows split
+set splitright
+
 set nobackup		" do not keep a backup file, use versions instead
 set history=250		" keep 250 lines of command line history
 set hidden          " Abandon buffers even if they have changes
