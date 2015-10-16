@@ -8,6 +8,9 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" Windows split
+set splitright
+
 set nobackup		" do not keep a backup file, use versions instead
 set history=250		" keep 250 lines of command line history
 set hidden          " Abandon buffers even if they have changes
@@ -168,6 +171,7 @@ nnoremap ° ^
 nnoremap <Leader>c :Gstatus<CR>
 nnoremap <Leader>sw :SessionSave<CR>
 nnoremap <Leader>sl :SessionList<CR>
+nnoremap <Leader>l :!leo <C-R><C-W><CR>
 
 nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
