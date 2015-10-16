@@ -37,9 +37,6 @@
 [submodule "bundle/ag"]
 	path = bundle/ag
 	url = https://github.com/rking/ag.vim.git
-[submodule "bundle/LearnVim"]
-	path = bundle/LearnVim
-	url = https://github.com/dahu/LearnVim.git
 [submodule "bundle/sessionman"]
 	path = bundle/sessionman
 	url = https://github.com/vim-scripts/sessionman.vim

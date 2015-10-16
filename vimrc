@@ -177,6 +177,8 @@ nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F7> :TagbarToggle<CR>
 " Move trow linebreaks
+inoremap <A-Down> <Esc>gja
+inoremap <A-Up> <Esc>gka
 vnoremap <A-Down> gj
 vnoremap <A-Up> gk
 nnoremap <A-Down> gj
