@@ -176,6 +176,7 @@ nnoremap <Leader>l :!leo <C-R><C-W><CR>
 nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F7> :TagbarToggle<CR>
+nnoremap <F9> :edit %:p:h<CR>
 " Move trow linebreaks
 inoremap <A-Down> <Esc>gja
 inoremap <A-Up> <Esc>gka
