@@ -28,12 +28,14 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = git://github.com/vim-scripts/vimwiki.git
+    ignore = untracked
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/jlanzarotta/bufexplorer.git
 [submodule "bundle/localrc"]
 	path = bundle/localrc
-	url = https://github.com/thinca/vim-localrc.git
+    url = https://github.com/thinca/vim-localrc.git
+    ignore = untracked
 [submodule "bundle/ag"]
 	path = bundle/ag
 	url = https://github.com/rking/ag.vim.git
