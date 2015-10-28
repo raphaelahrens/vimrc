@@ -39,9 +39,6 @@
 [submodule "bundle/ag"]
 	path = bundle/ag
 	url = https://github.com/rking/ag.vim.git
-[submodule "bundle/csharp"]
-	path = bundle/csharp
-	url = https://github.com/vim-scripts/csharp.vim
 [submodule "bundle/sessionman"]
 	path = bundle/sessionman
 	url = https://github.com/vim-scripts/sessionman.vim
@@ -54,3 +51,9 @@
 [submodule "bundle/jsdoc"]
 	path = bundle/jsdoc
 	url = https://github.com/heavenshell/vim-jsdoc.git
+[submodule "bundle/vim-textobj-comment"]
+	path = bundle/vim-textobj-comment
+	url = https://github.com/glts/vim-textobj-comment.git
+[submodule "bundle/vim-textobj-user"]
+	path = bundle/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user.git
