@@ -68,17 +68,14 @@ set guicursor&
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
-    " Enable file type detection.
-    " Use the default filetype settings, so that mail gets 'tw' set to 72,
-    " 'cindent' is on in C files, etc.
-    " Also load indent files, to automatically do language-dependent indenting.
-    " filetype plugin indent on
-
     " Put these in an autocmd group, so that we can delete them easily.
     augroup vimrcEx
     au!
 
     autocmd FileType mail set spell
+
+    " let terminal resize scale the internal windows
+    autocmd VimResized * :wincmd =
 
     " When editing a file, always jump to the last known cursor position.
     " Don't do it when the position is invalid or when inside an event handler
