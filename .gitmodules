@@ -67,3 +67,6 @@
 	path = bundle/rfc-syntax
 	url = https://github.com/vim-scripts/rfc-syntax/
     ignore = untracked
+[submodule "spell"]
+	path = spell
+	url = https://github.com/tantSinnister/spell.git
