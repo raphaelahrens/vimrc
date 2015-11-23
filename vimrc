@@ -157,6 +157,7 @@ nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F7> :TagbarToggle<CR>
 nnoremap <F9> :edit %:p:h<CR>
+nnoremap <F11> :split ~/.vim/tolearn.txt<CR>
 " Move trow linebreaks
 inoremap <A-Down> <Esc>gja
 inoremap <A-Up> <Esc>gka
