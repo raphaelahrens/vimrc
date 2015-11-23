@@ -67,26 +67,8 @@ set guicursor&
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
-    " Put these in an autocmd group, so that we can delete them easily.
-    augroup vimrcEx
-    au!
-
-    autocmd FileType mail set spell
-
-    " let terminal resize scale the internal windows
-    autocmd VimResized * :wincmd =
-
-    " When editing a file, always jump to the last known cursor position.
-    " Don't do it when the position is invalid or when inside an event handler
-    " (happens when dropping a file on gvim).
-    autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
-
-    augroup END
-endif " has("autocmd")
+    source ~/.vim/autocmd.vim
+endif
 
 """""""""""""""""""""""""""""""""
 "Execute shell command in buffer"
@@ -169,6 +151,7 @@ nnoremap <Leader>c :Gstatus<CR>
 nnoremap <Leader>sw :SessionSave<CR>
 nnoremap <Leader>sl :SessionList<CR>
 nnoremap <Leader>l :!leo <C-R><C-W><CR>
+nnoremap <Leader>ö :!addword2 --choose <C-R><C-W><CR>
 
 nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
