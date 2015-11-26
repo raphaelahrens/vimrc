@@ -1,4 +1,7 @@
 #!/bin/sh
-git submodule foreach git pull origin master
+git submodule update --remote
 git add ./bundle/*
 git commit -m "UPDATED: Plugins"
+git add spell 
+git commit -m "UPDATED: Spell"
+git push github master
