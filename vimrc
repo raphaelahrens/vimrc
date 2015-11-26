@@ -215,6 +215,13 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
+function PrintFile(fname)
+   call system("cat " . a:fname . " | gtklp")
+   call delete(a:fname)
+   return v:shell_error
+endfunction
+set printexpr=PrintFile(v:fname_in)
+
 let g:jsdoc_default_mapping = 0
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
