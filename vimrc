@@ -151,7 +151,33 @@ nnoremap <Leader>c :Gstatus<CR>
 nnoremap <Leader>sw :SessionSave<CR>
 nnoremap <Leader>sl :SessionList<CR>
 nnoremap <Leader>l :!leo <C-R><C-W><CR>
-nnoremap <Leader>ö :!addword2 --choose <C-R><C-W><CR>
+
+function! AddWord(word)
+    execute "!addword2 --choose \"".a:word."\""
+    if v:shell_error != 0
+        return 1
+    endif
+
+    let changedDict = system("cat ~/.vim/spell/.last-spell")
+    silent execute "mkspell! ".changedDict
+    redraw!
+    return 0
+endfunc
+
+function! VAddWord()
+    let temp = @t
+    norm! gv"ty
+    call AddWord(@t)
+    let @t = temp
+endfunc
+
+function! NAddWord()
+    let word = expand("<cword>")
+    call AddWord(word)
+endfunc
+
+nnoremap <Leader>ö :call NAddWord()<CR>
+vnoremap <Leader>ö :call VAddWord()<CR>
 
 nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
