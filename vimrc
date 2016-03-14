@@ -5,6 +5,8 @@ colorscheme tantmustang
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+set directory^=~/swp
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -184,6 +186,7 @@ nnoremap <F5> :GundoToggle<CR>
 nnoremap <F7> :TagbarToggle<CR>
 nnoremap <F9> :edit %:p:h<CR>
 nnoremap <F11> :split ~/.vim/tolearn.txt<CR>
+nnoremap <F12> :split ~/notes<CR>
 " Move trow linebreaks
 inoremap <A-Down> <Esc>gja
 inoremap <A-Up> <Esc>gka
