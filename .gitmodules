@@ -73,11 +73,6 @@
 	url = https://github.com/othree/javascript-libraries-syntax.vim.git
     ignore = untracked
 	branch = master
-[submodule "bundle/jsdoc"]
-	path = bundle/jsdoc
-	url = https://github.com/heavenshell/vim-jsdoc.git
-    ignore = untracked
-	branch = master
 [submodule "bundle/vim-textobj-comment"]
 	path = bundle/vim-textobj-comment
 	url = https://github.com/glts/vim-textobj-comment.git
