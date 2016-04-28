@@ -1,7 +1,11 @@
 #!/bin/sh
 git submodule update --remote
+git submodule update --init --recursive
 git add ./bundle/*
 git commit -m "UPDATED: Plugins"
 git add spell 
 git commit -m "UPDATED: Spell"
 git push github master
+
+cd bundle/YouCompleteMe/ || exit 1
+./install.py --tern-completer
