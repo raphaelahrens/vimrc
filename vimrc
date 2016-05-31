@@ -21,7 +21,7 @@ set laststatus=2    " Always show the status line
 set ruler	    	" show the cursor position all the time
 set showcmd	    	" display incomplete commands
 set wildmenu        " show matched words of tab completion and highlight selected
-set wildmode=longest,full " complete longest match and then show menu
+set wildmode=longest,list,full " complete longest match and then show menu
 set completeopt=longest,menu,preview " complete longest match and then show menu
 set scrolloff=1 
 set display+=lastline
