@@ -113,3 +113,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/togglecursor"]
+	path = bundle/togglecursor
+	url = https://github.com/jszakmeister/vim-togglecursor.git
