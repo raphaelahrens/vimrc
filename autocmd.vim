@@ -2,8 +2,8 @@
 
 function! <SID>TrimEmptyLines()
     let cursor_pos = getpos(".")
-    1s/\(^#.*\)\(\n\s*\)*/\1\r\r/e
-    2,$s/\(^\s*\n\)*\(^#.*\)\(\n\s*\)*/\r\2\r\r/e
+    1s/\(^#.*\)\(\n\s*\)*\n/\1\r\r/e
+    2,$s/\(^\s*\n\)*\(^#.*\)\(\n\s*\)*\n/\r\2\r\r/e
     call cursor(cursor_pos[1], cursor_pos[2])
 endfunc
 
