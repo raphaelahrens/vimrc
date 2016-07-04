@@ -124,15 +124,6 @@ call pathogen#helptags()
 filetype plugin indent on
 syntax on
 
-" Disable python folding
-let g:pymode_folding = 0
-
-" Skip errors and warnings
-" E.g. "E501,W002", "E2,W" (Skip all Warnings and Errors startswith E2) and etc
-let g:pymode_lint_ignore = "E501,C0301"
-
-let g:pymode_doc = 0
-
 let mapleader = "ä"
 
 " Don't use Ex mode, use Q for formatting
