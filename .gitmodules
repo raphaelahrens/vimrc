@@ -117,3 +117,6 @@
 [submodule "bundle/togglecursor"]
 	path = bundle/togglecursor
 	url = https://github.com/jszakmeister/vim-togglecursor.git
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
