@@ -93,12 +93,6 @@
 	url = https://github.com/vim-scripts/rfc-syntax/
     ignore = untracked
 	branch = master
-[submodule "spell"]
-	path = spell
-	url = https://github.com/raphaelahrens/spell.git
-	pushurl = git@github.com:raphaelahrens/spell.git
-    ignore = untracked
-	branch = master
 [submodule "bundle/vim-virtualenv"]
 	path = bundle/vim-virtualenv
 	url = https://github.com/jmcantrell/vim-virtualenv
@@ -120,3 +114,6 @@
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "bundle/vim-pandoc-syntax"]
+	path = bundle/vim-pandoc-syntax
+	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git

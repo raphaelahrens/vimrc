@@ -169,8 +169,15 @@ function! NAddWord()
     call AddWord(word)
 endfunc
 
+function! RemoveFromArgList()
+    execute ".argdelete"
+    execute "next"
+endfunc
+
 nnoremap <Leader>ö :call NAddWord()<CR>
 vnoremap <Leader>ö :call VAddWord()<CR>
+
+nnoremap <Leader>dd :call RemoveFromArgList()<CR>
 
 nnoremap <F3> :BufExplorer<CR>
 nnoremap <F5> :GundoToggle<CR>
@@ -182,7 +189,7 @@ nnoremap <F12> :split ~/notes<CR>
 inoremap <A-Down> <Esc>gja
 inoremap <A-Up> <Esc>gka
 vnoremap <A-Down> gj
-vnoremap <A-Up> gk
+vnoremap <A-up> gk
 nnoremap <A-Down> gj
 nnoremap <A-Up> gk
 

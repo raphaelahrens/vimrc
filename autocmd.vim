@@ -22,6 +22,7 @@ augroup vimrcEx
     autocmd FileType mail set spell
     autocmd FileType markdown set complete+=kspell
     autocmd FileType markdown autocmd BufWritePre <buffer> :call <SID>TrimEmptyLines()
+    autocmd FileType html set tabstop=2 shiftwidth=2 expandtab
     autocmd VimResized * :wincmd =
     " Kill the capslock when leaving insert mode.
     autocmd InsertLeave * set iminsert=0
